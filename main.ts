@@ -31,4 +31,10 @@ basic.forever(function () {
     if (Led == 0) {
         del += -1
     }
+    if (col > 4) {
+        col = 0
+    }
+    if (col < 0) {
+        col = 4
+    }
 })
